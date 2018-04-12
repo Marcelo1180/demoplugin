@@ -20,6 +20,7 @@ endif
 syntax clear javaScriptFunction
 " syntax match javaScriptFunction /\<function\>/ nextgroup=javaScriptFuncName skipwhite conceal cchar=𝑓
 syntax match javaScriptFunction /\<function\>/ conceal cchar=𝑓
+syntax match javaScriptFunction /\<funct\>/ conceal cchar=
 " syntax match javaScriptFunctionNoParams /function()/ conceal cchar=𝑓
 
 " hi link javaScriptFunctionNoParams javaScriptFunction
