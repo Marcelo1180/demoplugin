@@ -20,12 +20,13 @@ endif
 syntax clear javaScriptFunction
 " syntax match javaScriptFunction /\<function\>/ nextgroup=javaScriptFuncName skipwhite conceal cchar=𝑓
 syntax match javaScriptFunction /\<function\>/ conceal cchar=𝑓
+syntax match javaScriptFunction "=>" conceal cchar=
 " syntax match javaScriptFunctionNoParams /function()/ conceal cchar=𝑓
 
 " hi link javaScriptFunctionNoParams javaScriptFunction
 " hi! link Conceal javaScriptFunction
 
-" set conceallevel=1
+set conceallevel=1
 
 function! HelloWorld()
 pyfile demo.py
